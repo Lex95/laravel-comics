@@ -1,8 +1,8 @@
 <footer>
     <section id="fs1">
         <div class="container container-flex">
-            <div class="left-side container-flex">
-                <div class="footer-links">
+            <div class="left-side">
+                <div class="footer-links container-flex">
                     <div class="col">
                         <h3>Dc Comics</h3>
                         <ul>
@@ -50,10 +50,21 @@
                 <p>All Site Cotnent TM and © 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved.<br>
                 <a href="#">Cookies Settings</a></p>
             </div>
-            <div class="filler"></div>
-            <div class="logo-container">
+            <div class="logo-container filler">
                 <img src={{ asset('images/dc-logo-bg.png') }} alt="">
             </div>
+        </div>
+    </section>
+    <section id="fs2">
+        <div class="container container-flex">
+            <button>Sign up now!</button>
+            <div class="filler"></div>
+            <span>Follow us</span>
+            <img src={{ asset("images/footer-facebook.png") }} alt="">
+            <img src={{ asset("images/footer-twitter.png") }} alt="">
+            <img src={{ asset("images/footer-youtube.png") }} alt="">
+            <img src={{ asset("images/footer-pinterest.png") }} alt="">
+            <img src={{ asset("images/footer-periscope.png") }} alt="">
         </div>
     </section>
 </footer>
