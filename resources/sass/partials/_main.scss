@@ -1,5 +1,4 @@
-main {
-    background-color: rgb(28,28,28);
+#comics {
     .container {
         .title {
             display: inline-block;
@@ -62,6 +61,89 @@ main {
                     text-transform: uppercase;
                     color: white;
                     margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+#single {
+    #ss1 {
+        background-color: cornflowerblue;
+        padding: 20px 0;
+        .small-container {
+            position: relative;
+            .img-container {
+                position: absolute;
+                bottom: 0;
+                .more {
+                    position: absolute;
+                    bottom: 0;
+                    background-color: turquoise;
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #ss2 {
+        background-color: white;
+        padding: 30px 0;
+        .text-box {
+            flex-grow: 1;
+            margin-right: 20px;
+            h2 {
+                color: blue;
+                text-transform: uppercase;
+            }
+            .pricebox {
+                background-color: green;
+                color: white;
+                align-items: center;
+                span {
+                    color: lightgreen;
+                }
+                .text-white {
+                    color: white;
+                }
+                button {
+                    padding: 10px 20px;
+                    border-left: 1px solid black;
+                    background-color: transparent;
+                    color: white;
+                }
+            }
+        }
+    }
+    #ss3 {
+        background-color: lightgray;
+        .small-container {
+            padding: 20px 0 50px;
+            .col {
+                width: calc(50% - 10px);
+                &:first-of-type {
+                    margin-right: 20px;
+                }
+                h3 {
+                    color: blue;
+                    margin-bottom: 20px;
+                }
+                table {
+                    font-size: small;
+                    width: 100%;
+                    border-spacing: 0;
+                    tr {
+                        td {
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                            padding: 10px 0;
+                            &:first-of-type {
+                                color: blue;
+                                width: 30%;
+                            }
+                        }
+                    }
                 }
             }
         }
