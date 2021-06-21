@@ -46,6 +46,86 @@ header #hero {
   height: 325px;
 }
 
+main {
+  background-color: #1c1c1c;
+}
+
+main .container .title {
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+main .container .container-flex {
+  flex-wrap: wrap;
+}
+
+main .container .container-flex .item {
+  padding: 0 10px 20px;
+  width: calc(100% / 6);
+}
+
+main .container .container-flex .item .img-container {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+main .container .container-flex .item .img-container img {
+  width: 100%;
+}
+
+main .container .container-flex .item p {
+  color: white;
+  text-transform: uppercase;
+  font-size: small;
+  margin-top: 10px;
+}
+
+main .container .btn-container {
+  margin: 20px auto;
+  width: 200px;
+}
+
+main .container .btn-container button {
+  background-color: cornflowerblue;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 50px;
+}
+
+main .banner {
+  background-color: cornflowerblue;
+}
+
+main .banner .container {
+  padding: 30px 0;
+}
+
+main .banner ul {
+  list-style: none;
+}
+
+main .banner ul li {
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+}
+
+main .banner ul li img {
+  width: 40px;
+}
+
+main .banner ul li span {
+  text-transform: uppercase;
+  color: white;
+  margin-left: 10px;
+}
+
 footer #fs1 {
   background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
   background-size: 100%;
@@ -137,7 +217,7 @@ footer #fs2 .container img {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
 }
 
