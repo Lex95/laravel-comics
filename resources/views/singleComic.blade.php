@@ -1,6 +1,6 @@
 @extends('layout.default')
 
-@section('page_title', 'Pagina dei fumetti')
+@section('page_title', 'Dettagli fumetto')
 
 @section('content')
 

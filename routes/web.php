@@ -13,6 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// tecnicamente è la sezione comics
 Route::get('/', function () {
-    return view('homepage');
-});
+
+    $datiComics = config("comics");
+
+    $datiView = [
+        "comicsList" => $datiComics
+    ];
+
+    return view('homepage', $datiView);
+})->name("pagina-home");
+
+Route::get("/{index}", function ($index) {
+
+    $datiComics = config("comics");
+
+    if (!is_numeric($index) || $index < 0 || $index > count($datiComics) - 1) {
+        abort(404, "Prodotto inesistente");
+    }
+
+    $fumettoScelto = $datiComics[intval($index)];
+    return view("singleComic", [
+        "fumetto" => $fumettoScelto
+    ]);
+})->name("pagina-singolo-fumetto");
